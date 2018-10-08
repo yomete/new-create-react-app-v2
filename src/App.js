@@ -3,6 +3,17 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+
+  componentDidMount () {
+    fetch('/api/users')
+    .then(res => {
+      return res.json()
+    })
+    .then(response => {
+      console.log(response)
+    })
+  }
+
   render() {
     return (
       <div className="App">
@@ -19,6 +30,7 @@ class App extends Component {
           >
             Learn React
           </a>
+          
         </header>
       </div>
     );
