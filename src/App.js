@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+// this let's React know that we are trying to import the SVG as a component
 import { ReactComponent as Logo } from './logo.svg';
 import './App.css';
 
@@ -7,6 +8,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
+          {/* Logo can then be used as a React component here */}
           <Logo className="App-logo" />
           <p>
             Edit <code>src/App.js</code> and save to reload.
