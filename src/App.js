@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
+import { css } from 'emotion/macro'
 import logo from './logo.svg';
 import './App.css';
+
+const className = css`
+  color: hotpink;
+`
 
 class App extends Component {
   render() {
@@ -8,7 +13,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <p>
+          <p className={className}> 
             Edit <code>src/App.js</code> and save to reload.
           </p>
           <a
